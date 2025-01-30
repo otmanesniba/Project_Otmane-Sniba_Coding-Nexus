@@ -6,21 +6,21 @@ const courses = [
     description: "Learn HTML, CSS, JavaScript, React, and Node.js through hands-on projects.",
     level: "Beginner",
     duration: "12 weeks",
-    image: "/placeholder.svg"
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80"
   },
   {
     title: "Python for Data Science",
     description: "Master Python programming and essential data science libraries.",
     level: "Intermediate",
     duration: "8 weeks",
-    image: "/placeholder.svg"
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80"
   },
   {
     title: "Mobile App Development with React Native",
     description: "Build cross-platform mobile apps using React Native framework.",
     level: "Advanced",
     duration: "10 weeks",
-    image: "/placeholder.svg"
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80"
   }
 ];
 

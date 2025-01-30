@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
 
@@ -10,13 +11,19 @@ interface CourseCardProps {
 }
 
 const CourseCard = ({ title, description, level, duration, image }: CourseCardProps) => {
+  const navigate = useNavigate();
+
+  const handleEnroll = () => {
+    navigate("/enroll", { state: { course: { title } } });
+  };
+
   return (
-    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg bg-card">
       <CardHeader className="p-0">
         <img
           src={image}
           alt={title}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
         />
       </CardHeader>
       <CardContent className="p-6">
@@ -32,7 +39,9 @@ const CourseCard = ({ title, description, level, duration, image }: CourseCardPr
         <p className="text-muted-foreground">{description}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full">Enroll Now</Button>
+        <Button className="w-full" onClick={handleEnroll}>
+          Enroll Now
+        </Button>
       </CardFooter>
     </Card>
   );
