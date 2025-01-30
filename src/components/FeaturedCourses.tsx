@@ -21,13 +21,35 @@ const courses = [
     level: "Advanced",
     duration: "10 weeks",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80"
+  },
+  {
+    title: "Machine Learning Fundamentals",
+    description: "Learn the basics of ML algorithms and their implementation.",
+    level: "Intermediate",
+    duration: "14 weeks",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80"
+  },
+  {
+    title: "Cloud Computing with AWS",
+    description: "Master cloud services and deployment with Amazon Web Services.",
+    level: "Advanced",
+    duration: "10 weeks",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+  },
+  {
+    title: "Cybersecurity Essentials",
+    description: "Learn fundamental concepts of network security and ethical hacking.",
+    level: "Intermediate",
+    duration: "12 weeks",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"
   }
 ];
 
 const FeaturedCourses = () => {
   return (
-    <section className="py-20 px-4 bg-background">
-      <div className="container mx-auto">
+    <section className="py-20 px-4 bg-background relative">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+      <div className="container mx-auto relative">
         <div className="text-center mb-12 animate-fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">Featured Courses</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
